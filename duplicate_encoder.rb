@@ -10,7 +10,7 @@ end
 
 # Better solution
 
-def duplicate_encode(word)
+def duplicate_encode2(word)
   word
     .downcase
     .chars

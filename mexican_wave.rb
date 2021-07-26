@@ -8,7 +8,7 @@ def wave(str)
   result
 end
 
-def wave(str)
+def wave2(str)
   wave = []
   for i in 0...str.length
     word = str.downcase
@@ -18,7 +18,7 @@ def wave(str)
   wave
 end
 
-def wave(str)
+def wave3(str)
   res = []
   str.size.times do |idx|
     next if str[idx] == ' '
@@ -28,6 +28,6 @@ def wave(str)
   res
 end
 
-def wave s
+def wave4 s
   s.size.times.map{|i| s[0...i] + s[i].upcase + s[i+1..-1]} - [s]
 end

@@ -6,11 +6,11 @@ def filter_list(l)
 end
 
 # Better Solution
-def filter_list(l)
+def filter_list2(l)
   l.reject { |x| x.is_a? String }
 end
 
 # Another Solution
-def filter_list(l)
+def filter_list3(l)
   l.select{|i| i.is_a?(Integer)}
 end

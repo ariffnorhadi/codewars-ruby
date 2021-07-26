@@ -4,7 +4,7 @@ end
 
 # better solution
 
-def expanded_form(num)
+def expanded_form2(num)
   num.to_s
      .chars
      .reverse
@@ -14,6 +14,6 @@ def expanded_form(num)
      .join (' + ')
 end
 
-def expanded_form(num)
+def expanded_form3(num)
   num.to_s.chars.reverse.map.with_index{|i,j| i == "0" ? nil : i + "0" * j }.compact.reverse.join(" + ")
 end

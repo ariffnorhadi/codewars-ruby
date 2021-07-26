@@ -9,10 +9,10 @@ def find_it(seq)
 end
 
 # better solution
-def find_it(seq)
+def find_it2(seq)
   seq.detect { |n| seq.count(n).odd? }
 end
 
-def find_it(seq)
+def find_it3(seq)
   seq.reduce(:^)
 end

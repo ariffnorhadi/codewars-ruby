@@ -10,12 +10,12 @@ def max_sequence(a)
 end
 
 # other solution
-def max_sequence(array)
+def max_sequence2(array)
   (1..array.size).map { |i| array.each_cons(i).map(&:sum) }.flatten.push(0).max
 end
 
 # another solution
-def max_sequence(arr)
+def max_sequence3(arr)
   sum = 0
   max = 0
   for i in 0...arr.length

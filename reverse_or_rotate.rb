@@ -23,7 +23,7 @@ def check_chunk(chunk)
 end
 
 # better solution
-def revrot(str, sz)
+def revrot2(str, sz)
   return '' if sz <= 0
   chunks = str.scan(/.{#{sz}}/)
   chunks.map do |chunk|
@@ -33,7 +33,7 @@ def revrot(str, sz)
   end.join
 end
 
-def revrot(str, sz)
+def revrot3(str, sz)
   str.scan(/.{#{sz}}/).map { |s| cubes_sum_even?(s.chars) }.join
 end
 

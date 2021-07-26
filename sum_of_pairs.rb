@@ -21,7 +21,7 @@ def sum_pairs(ints, s)
 end
 
 # better solution
-def sum_pairs(ints, s)
+def sum_pairs2(ints, s)
   seen = {}
   for i in ints do
     return [s-i, i] if seen[s-i]
@@ -31,7 +31,7 @@ def sum_pairs(ints, s)
 end
 
 require 'set'
-def sum_pairs(ints, s)
+def sum_pairs3(ints, s)
   seen = Set.new
   ints.each { |v|
     return [s - v, v] if seen.include?(s - v)
@@ -40,7 +40,7 @@ def sum_pairs(ints, s)
   nil
 end
 
-def sum_pairs(ints, s)
+def sum_pairs4(ints, s)
   passed = Set.new
   ints.each {|int| passed.include?(s - int) ? (return [s - int, int]) : passed.add(int) }
   nil

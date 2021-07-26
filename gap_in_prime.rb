@@ -14,7 +14,7 @@ end
 # another solution
 require 'prime'
 
-def gap(gap, low, high)
+def gap2(gap, low, high)
   primes_between(low,high).each_cons(2).find { |(a,b)| b-a == gap }
 end
 
